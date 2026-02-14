@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background Orbs -->
+    <div class="orb-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- Main Card Deck Container -->
+    <div class="deck-container">
+        <!-- Card Stack Wrapper -->
+        <div class="card-stack">
+
+            <!-- Card 1: The Hook -->
+            <div class="glass-card active" data-card="0">
+                <div class="card-content">
+                    <div class="card-image-hero">
+                        <img src="ay5.jpeg" alt="Pink Roses" class="hero-img">
+                    </div>
+                    <h1 class="card-title">Hey Ayshiiiiiiiiii.</h1>
+                    <button class="btn-primary pulse" data-action="next">Tap to open</button>
+                </div>
+            </div>
+
+            <!-- Card 2: The Vibe Check -->
+            <div class="glass-card" data-card="1">
+                <div class="card-content tilt-card">
+                    <h2 class="card-subtitle">I wanted to make you</h2>
+                    <h1 class="card-title gradient-text">something a little different</h1>
+                    <h2 class="card-subtitle">this year.</h2>
+                    <button class="btn-secondary" data-action="next">Continue →</button>
+                </div>
+            </div>
+
+            <!-- Card 4: The Interactive Core -->
+            <div class="glass-card" data-card="3">
+                <div class="card-content">
+                    <h2 class="card-title small-title">Why you're my favorite person</h2>
+                    <div class="decoder-display">
+                        <p class="decoded-text" id="decodedText">████████████████</p>
+                    </div>
+                    <button class="btn-decode" id="decodeBtn">
+                        <span class="decode-icon">⚡</span> Decode Message
+                    </button>
+                    <button class="btn-secondary hidden" id="nextBtn3" data-action="next">Continue →</button>
+                </div>
+            </div>
+
+            <!-- Card 5: The Question -->
+            <div class="glass-card" data-card="4">
+                <div class="card-content">
+                    <h1 class="card-title">Let's have palang tod kissi tonight 🫦</h1>
+                    <p class="card-subtitle glow-text">My treat. 💕</p>
+
+                    <div id="button-group" class="final-buttons">
+                        <a href="sms:+1234567890&body=Yes! I'd love to have kissi with you tonight! ❤️" id="sms-btn"
+                            class="btn-primary glow-btn pulse-btn">
+                            Absolutely! 💖
+                        </a>
+                        <button id="email-btn" class="btn-secondary-alt outline-btn">
+                            Email me the details
+                        </button>
+                    </div>
+
+                    <div id="custom-message-box" style="display: none; margin-top: 1.5rem;">
+                        <textarea id="custom-msg-text" placeholder="Type your reply here..."
+                            style="width: 100%; height: 100px; padding: 15px; border-radius: 12px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--accent-color); margin-bottom: 1rem; font-family: 'Open Sans', sans-serif; resize: none;"></textarea>
+                        <br>
+                        <button id="send-custom-msg-btn" class="pulse-btn">Send Message 🚀</button>
+                        <p id="success-msg"
+                            style="display: none; color: #FF6B8B; font-weight: bold; margin-top: 1rem; font-size: 1.2rem;">
+                            Message Sent! ❤️</p>
+                    </div>
+
+                    <p class="card-footnote" style="margin-top: 2rem;">Made with love, just for you.</p>
+                </div>
+            </div>
+
+            <!-- Progress Indicator -->
+            <div class="progress-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
